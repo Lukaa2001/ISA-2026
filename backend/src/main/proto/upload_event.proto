@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package jutjubic.mq;
+
+option java_package = "com.jutjubic.backend.proto";
+option java_outer_classname = "UploadEventProto";
+
+message UploadEvent {
+  int64 video_id = 1;
+  string title = 2;
+  int64 video_size_bytes = 3;
+  int64 thumbnail_size_bytes = 4;
+  int64 author_id = 5;
+  string author_username = 6;
+  string description = 7;
+  repeated string tags = 8;
+  string video_path = 9;
+  string thumbnail_path = 10;
+  string uploaded_at = 11;
+}
