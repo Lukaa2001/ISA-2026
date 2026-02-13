@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Password fields dark red text */
+input[type="password"] {
+  color: #8B0000 !important;
+}
+
+/* Ant Design password input */
+.ant-input-password input {
+  color: #8B0000 !important;
+}
+
+/* Upload button styling */
+.upload-btn {
+  background-color: #ff4d4f !important;
+  border-color: #ff4d4f !important;
+  color: white !important;
+}
+
+/* Video card red border */
+.video-card {
+  border: 2px solid red;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
