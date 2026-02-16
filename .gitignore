@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.env
+.DS_Store
+**/.DS_Store
+uploads/videos/*
+uploads/thumbnails/*
+uploads/tmp/*
+!uploads/videos/.gitkeep
+!uploads/thumbnails/.gitkeep
+!uploads/tmp/.gitkeep
+*.log
+backend/target/
+upload-consumer/target/

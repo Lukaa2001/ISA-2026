@@ -1,0 +1,20 @@
+spring:
+  main:
+    web-application-type: none
+  rabbitmq:
+    host: ${RABBITMQ_HOST:rabbitmq}
+    port: ${RABBITMQ_PORT:5672}
+    username: ${RABBITMQ_USERNAME:guest}
+    password: ${RABBITMQ_PASSWORD:guest}
+
+app:
+  mq:
+    exchange: ${UPLOAD_EVENT_EXCHANGE:upload.events}
+    json-queue: ${UPLOAD_EVENT_JSON_QUEUE:upload.events.json}
+    protobuf-queue: ${UPLOAD_EVENT_PROTOBUF_QUEUE:upload.events.protobuf}
+    json-routing-key: ${UPLOAD_EVENT_JSON_ROUTING_KEY:upload.json}
+    protobuf-routing-key: ${UPLOAD_EVENT_PROTOBUF_ROUTING_KEY:upload.protobuf}
+
+logging:
+  level:
+    root: INFO
